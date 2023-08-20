@@ -11,7 +11,7 @@ const MAIN_PAGE = `
 		</p>
 		<p>
 			All project parts are logical modules that can be enabled or disabled depending on player needs (which provides a good customisation for players).
-			Most modules also have configs and options, so it is possible to customise modules individually.
+			Most modules also have configs and options, so it is possible to customize modules individually.
 		</p>
 	</div>
 	<img style="width: 100%;" src="img/main_screenshot.png">
