@@ -66,6 +66,7 @@ const DOWNLOADS_PAGE = `
 			some launchers (PolyMC/Prism) have check for legacy versions that prevents usage of modern Java. Make sure that you disabled all checks.
 		</p>
 		<ul style="line-height: 30px;">
+			<li><a href="https://disk.yandex.ru/d/nfDFCWkQt_b_Sg">Alpha 0.0.4</a></li>
 			<li><a href="https://disk.yandex.ru/d/Wmq0MXRC0Fh2Og">Alpha 0.0.3</a></li>
 			<li><a href="https://disk.yandex.ru/d/1K5a2ibsL_lDrQ">Alpha 0.0.2</a></li>
 			<li><a href="https://www.dropbox.com/s/vdq325iur78tal4/BHTests.zip?dl=0">Alpha 0.0.1</a></li>
