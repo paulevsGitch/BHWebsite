@@ -23,37 +23,85 @@ const BHCORE_DEP = "BHCore (deprecated)";
 
 const MOD_LIST = [
 	{
-		header: "Advanced Trees <span style='color: #ff4216'>(Not Updated, WIP)",
-		repoName: "AdvancedTrees",
-		img: "raw/main/src/main/resources/assets/advancedtrees/icon.png",
+		header: "Advanced Trees <span style='color: #ff4216'>(Not Updated, WIP)</span>",
+		repo: "https://github.com/paulevsGitch/AdvancedTrees",
+		img: "https://github.com/paulevsGitch/AdvancedTrees/raw/main/src/main/resources/assets/advancedtrees/icon.png",
 		description: "AdvancedTrees mod for Beta Horizons pack. This mod changes trees behaviour and make them dynamic complex growing structures. It also provides API for custom trees (WIP).",
 		dependencies: [BABRIC_DEP, STAPI_DEP, BHCORE_DEP]
 	},
 	{
+		header: "AnnoyanceFix (by Telvarost and 2zqa)",
+		repo: "https://github.com/telvarost/AnnoyanceFix-StationAPI",
+		img: "https://user-images.githubusercontent.com/25235249/260255281-f6331228-f1df-4e48-b33d-e94b46dcc703.png",
+		description: "This mod inhances vanilla Nether with new plants, mobs, blocks, biomes and terrain generator. It is a not direct port of original BetterNether mod or Minecraft 1.16 biomes into beta, but it can have similar vibes.",
+		dependencies: [BABRIC_DEP, STAPI_DEP]
+	},
+	{
+		header: "Better Nether Beta",
+		repo: "https://github.com/paulevsGitch/BetterNetherBeta/tree/stapi-2.0",
+		img: "https://github.com/paulevsGitch/BetterNetherBeta/raw/stapi-2.0/src/main/resources/assets/bnb/icon.png",
+		description: "This mod improves Minecraft weather by making clouds volumetric and weather effects local.",
+		dependencies: [BABRIC_DEP, STAPI_DEP]
+	},
+	{
 		header: "Better Weather",
-		repoName: "BetterWeather",
-		img: "raw/main/src/main/resources/assets/better_weather/icon.png",
+		repo: "https://github.com/paulevsGitch/BetterWeather",
+		img: "https://github.com/paulevsGitch/BetterWeather/raw/main/src/main/resources/assets/better_weather/icon.png",
 		description: "This mod improves Minecraft weather by making clouds volumetric and weather effects local.",
 		dependencies: [BABRIC_DEP, STAPI_DEP]
 	},
 	{
 		header: "BH Creative",
-		repoName: "BHCreative",
-		img: "raw/stapi-2.0/src/main/resources/assets/bhcreative/icon.png",
+		repo: "https://github.com/paulevsGitch/BHCreative",
+		img: "https://github.com/paulevsGitch/BHCreative/raw/stapi-2.0/src/main/resources/assets/bhcreative/icon.png",
 		description: "Creative mod for Beta Horizons modpack.",
 		dependencies: [BABRIC_DEP, STAPI_DEP]
 	},
 	{
-		header: "Graphene",
-		repoName: "Graphene",
-		img: "raw/main/src/main/resources/assets/graphene/icon.png",
+		header: "Graphene <span style='color: #ff4216'>(Not Updated, WIP)</span>",
+		repo: "https://github.com/paulevsGitch/Graphene",
+		img: "https://github.com/paulevsGitch/Graphene/raw/main/src/main/resources/assets/graphene/icon.png",
 		description: "This mod enhances Minecraft graphics in its own way.",
 		dependencies: [BABRIC_DEP, STAPI_DEP, BHCORE_DEP]
 	},
 	{
+		header: "Mod Menu (by calmilamsy, edited by VendoAU)",
+		repo: "https://github.com/VendoAU/ModMenu",
+		img: "https://github.com/VendoAU/ModMenu/raw/b1.7.3/src/main/resources/assets/modmenu/icon.png",
+		description: "This mod enriches the standard Minecraft menu with an interface displaying a one-dimensional array of modifications",
+		dependencies: [BABRIC_DEP]
+	},
+	{
+		header: "MojangFix (by js6pak)",
+		repo: "https://github.com/js6pak/mojangfix",
+		img: "https://cdn.modrinth.com/data/8sdj2JBj/6bbcf542d94cd819a0dcb7e93e38aa12ecbd0400.png",
+		description: "Minecraft b1.7.3 mod that fixes skins, authentication and more",
+		dependencies: [BABRIC_DEP]
+	},
+	{
+		header: "SmoothBeta (by MineDiver)",
+		repo: "https://github.com/mineLdiver/smoothbeta",
+		img: "https://cdn.discordapp.com/attachments/1128626864974475374/1128626865179992155/icon.png",
+		description: "This mod is a collection of tweaks and optimizations that improve b1.7.3 performance",
+		dependencies: [BABRIC_DEP, STAPI_DEP]
+	},
+	{
+		header: "Quitbutton (by Byte)",
+		repo: "https://glass-repo.net/repo/mod/quitbutton",
+		description: "This mod un-hides the Quit Button from Beta 1.7.3's main menu.",
+		dependencies: [BABRIC_DEP]
+	},
+	{
+		header: "Station API (by MineDiver and Calmilamsy)",
+		repo: "https://github.com/ModificationStation/StationAPI",
+		img: "https://cdn.discordapp.com/attachments/1123686228785639535/1123686228986970152/icon.png",
+		description: "A general use API for Fabric Loader mods on legacy Minecraft versions.",
+		dependencies: [BABRIC_DEP]
+	},
+	{
 		header: "Vanilla Block Enhancements",
-		repoName: "VanillaBlockEnhancements",
-		img: "raw/main/src/main/resources/assets/vbe/icon.png",
+		repo: "https://github.com/paulevsGitch/VanillaBlockEnhancements",
+		img: "https://github.com/paulevsGitch/VanillaBlockEnhancements/raw/main/src/main/resources/assets/vbe/icon.png",
 		description: "This mod changes behaviour for several vanilla blocks (like stairs and slabs) and fixes several bugs related to them.",
 		dependencies: [BABRIC_DEP, STAPI_DEP]
 	}
@@ -74,6 +122,12 @@ const DOWNLOADS_PAGE = `
 	</div>
 `;
 
+function setPixelated(img) {
+	if (img.naturalWidth < img.width) {
+		img.style.imageRendering = "pixelated";
+	}
+}
+
 function makeDownloads() {
 	var html = `
 	<div style="text-align: center; color: #ff4216; font-weight: bold;">
@@ -84,13 +138,22 @@ function makeDownloads() {
 	
 	var index = 0;
 	MOD_LIST.forEach(mod => {
-		html += `<td width="30%" style="text-align: center;"><img src="https://github.com/paulevsGitch/` + mod.repoName + "/" + mod.img + `" style="width: 90%;"/></td>`;
-		html += `
-			<td style="vertical-align: top;">
-			<p><a href="https://github.com/paulevsGitch/` + mod.repoName + `">` + mod.header + `</a></p>
-			<p><a href="https://jitpack.io/#paulevsGitch/` + mod.repoName + `"><img src="https://jitpack.io/v/paulevsGitch/` + mod.repoName + `.svg"></a></p>
-			<p>` + mod.description + `</p>
-		`;
+		html += `<tr><td width="25%" style="text-align: center;"><div style="width:90%;aspect-ratio:1/1;">`;
+		if (mod.img) {
+			html += `<img src="` +  mod.img + `" style="width: 100%;height: 100%;object-fit: cover;object-position: 0 0;margin-top:10px;margin-bottom:10px;" onload="setPixelated(this);"/>`
+		}
+		else {
+			html += `<div style="width:100%;height:100%;"><p style="margin:0;position:relative;top:50%;left:50%;transform:translate(-50%,-50%);">NO ICON</p></div">`;
+		}
+		html += `</div></td>`;
+		
+		html += `<td style="vertical-align: top;"><p><a href="` + mod.repo + `">` + mod.header + `</a></p>`;
+		if (mod.repo.includes("github.com")) {
+			html += `<p><a href="` +
+			mod.repo.replace("https://github.com/", "https://jitpack.io/#") + `"><img src="` +
+			mod.repo.replace("https://github.com/", "https://jitpack.io/v/") + `.svg"></a></p>`;
+		}
+		html += `<p style="margin-top:10px;margin-bottom:10px;">` + mod.description + `</p>`;
 		
 		var addDep = mod.dependencies !== undefined;
 		
