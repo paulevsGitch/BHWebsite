@@ -215,12 +215,13 @@ const FAQ_PAGE = `
 
 const HEADER_BUTTONS = [
 	{ name: "MAIN", html: MAIN_PAGE },
+	{ name: "FAQ", html: FAQ_PAGE },
 	{ name: "MODS", html: makeModList() },
-	{ name: "DOWNLOADS", html: DOWNLOADS_PAGE },
-	{ name: "FAQ", html: FAQ_PAGE }
+	{ name: "DOWNLOADS", html: DOWNLOADS_PAGE }
 ];
 
 var currentPage = parseInt(localStorage.getItem("bh_website_page")) || 0;
+if (currentPage < 0 || currentPage >= HEADER_BUTTONS.length) currentPage = 0;
 
 function init() {
 	var table = document.createElement("table");
