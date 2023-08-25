@@ -128,7 +128,7 @@ function setPixelated(img) {
 	}
 }
 
-function makeDownloads() {
+function makeModList() {
 	var html = `
 	<div style="text-align: center; color: #ff4216; font-weight: bold;">
 		<p>Mod list is in active development, expect to see changes here</p>
@@ -183,10 +183,41 @@ function makeDownloads() {
 	return html;
 }
 
+const FAQ_PAGE = `
+	<div style="margin-left: 25px; margin-right: 25px; text-align: justify; ">
+		<ul style="line-height: 30px;">
+			<li>
+				<p><span style="color: #ff4216;font-weight: bold;">What launcher I need to use for this pack?</span></p>
+				<p>Pack was origianally made for MultiMC launcher, but you can use it with PolyMC and with Prism since they use same pack format as MultiMC.</p>
+			</li>
+			<li>
+				<p><span style="color: #ff4216;font-weight: bold;">What Java version I need to use?</span></p>
+				<p>You need to use <a href="https://jdk.java.net/archive/">Java 17</a>, other Java versions will not work.</p>
+			</li>
+			<li>
+				<p><span style="color: #ff4216;font-weight: bold;">Why I can't launch instance and get "Exception caught from launcher" in my logs?</span></p>
+				<p>Looks like you are using Prism launcher which has legacy Minecraft compatibility check, you need disable it and set Java version for your instance to 17.</p>
+			</li>
+			<li>
+				<p><span style="color: #ff4216;font-weight: bold;">Why 3/4 of my Minecraft screen is white space?</span></p>
+				<p>This issue is related to DPI scaling, you need to change your java settings:</p>
+				<p style="margin-left: 40px;">- Right click your java.exe/javaw.exe file and open properties</p>
+				<p style="margin-left: 40px;">- Navigate to "Compatibility" &#10140; "Change high DPI settings"</p>
+				<p style="margin-left: 40px;">- "Override high DPI scaling behavior" &#10140; "Scaling performed by:" &#10140; "System"</p>
+			</li>
+			<li>
+				<p><span style="color: #ff4216;font-weight: bold;">How do I craft thing X?</span></p>
+				<p>At this moment there is no recipe quide in the pack, you can additionally install <a href="https://jenkins.glass-launcher.net/job/HMI-Fabric/36/artifact/build/libs/HMI-Fabric-Unofficial-5.0.12.jar">HMI</a> to see existing recipes. It is planned to add custom recipe viewer mod in the future</p>
+			</li>
+		</ul>
+	</div>
+`;
+
 const HEADER_BUTTONS = [
 	{ name: "MAIN", html: MAIN_PAGE },
-	{ name: "MODS", html: makeDownloads() },
-	{ name: "DOWNLOADS", html: DOWNLOADS_PAGE }
+	{ name: "MODS", html: makeModList() },
+	{ name: "DOWNLOADS", html: DOWNLOADS_PAGE },
+	{ name: "FAQ", html: FAQ_PAGE }
 ];
 
 var currentPage = parseInt(localStorage.getItem("bh_website_page")) || 0;
