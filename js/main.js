@@ -199,11 +199,20 @@ const FAQ_PAGE = `
 				<p>Looks like you are using Prism launcher which has legacy Minecraft compatibility check, you need disable it and set Java version for your instance to 17.</p>
 			</li>
 			<li>
-				<p><span style="color: #ff4216;font-weight: bold;">Why 3/4 of my Minecraft screen is white space?</span></p>
-				<p>This issue is related to DPI scaling, you need to change your java settings:</p>
-				<p style="margin-left: 40px;">- Right click your java.exe/javaw.exe file and open properties</p>
-				<p style="margin-left: 40px;">- Navigate to "Compatibility" &#10140; "Change high DPI settings"</p>
-				<p style="margin-left: 40px;">- "Override high DPI scaling behavior" &#10140; "Scaling performed by:" &#10140; "System"</p>
+				<table width="100%">
+					<tr>
+						<p><span style="color: #ff4216;font-weight: bold;">Why 3/4 of my Minecraft screen is white space?</span></p>
+						<td>
+							<p style="margin-top: 8px; margin-bottom: 8px;">This issue is related to DPI scaling, you need to change your java settings:</p>
+							<p style="margin-left: 40px; margin-top: 8px; margin-bottom: 8px;">- Right click your java.exe/javaw.exe file and open properties</p>
+							<p style="margin-left: 40px; margin-top: 8px; margin-bottom: 8px;">- Navigate to "Compatibility" &#10140; "Change high DPI settings"</p>
+							<p style="margin-left: 40px; margin-top: 8px; margin-bottom: 8px;">- "Override high DPI scaling behavior" &#10140; "Scaling performed by:" &#10140; "System"</p>
+						</td>
+						<td style="text-align: right; width: 35%; vertical-align: middle;">
+							<img src="img/scale_layout.png" style="width: 100%;"></img>
+						</td>
+					</tr>
+				</table>
 			</li>
 			<li>
 				<p><span style="color: #ff4216;font-weight: bold;">How do I craft thing X?</span></p>
