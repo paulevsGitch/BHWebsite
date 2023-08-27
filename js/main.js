@@ -33,14 +33,14 @@ const MOD_LIST = [
 		header: "AnnoyanceFix (by Telvarost and 2zqa)",
 		repo: "https://github.com/telvarost/AnnoyanceFix-StationAPI",
 		img: "https://user-images.githubusercontent.com/25235249/260255281-f6331228-f1df-4e48-b33d-e94b46dcc703.png",
-		description: "This mod inhances vanilla Nether with new plants, mobs, blocks, biomes and terrain generator. It is a not direct port of original BetterNether mod or Minecraft 1.16 biomes into beta, but it can have similar vibes.",
+		description: "The aim of this mod is to fix (major) annoyances or backport useful features that do not affect gameplay.",
 		dependencies: [BABRIC_DEP, STAPI_DEP]
 	},
 	{
 		header: "Better Nether Beta",
 		repo: "https://github.com/paulevsGitch/BetterNetherBeta/tree/stapi-2.0",
 		img: "https://github.com/paulevsGitch/BetterNetherBeta/raw/stapi-2.0/src/main/resources/assets/bnb/icon.png",
-		description: "This mod improves Minecraft weather by making clouds volumetric and weather effects local.",
+		description: "This mod inhances vanilla Nether with new plants, mobs, blocks, biomes and terrain generator. It is a not direct port of original BetterNether mod or Minecraft 1.16 biomes into beta, but it can have similar vibes.",
 		dependencies: [BABRIC_DEP, STAPI_DEP]
 	},
 	{
