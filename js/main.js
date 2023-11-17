@@ -308,8 +308,12 @@ function init() {
 	cell = row.insertCell(index++);
 	cell.style.textAlign = "right";
 	
+	var link = document.createElement("a");
+	link.href = "https://discord.gg/qxcP8EjkUC";
+	cell.appendChild(link);
+	
 	img = document.createElement("img");
-	cell.appendChild(img);
+	link.appendChild(img);
 	
 	img.src = "https://cdn-icons-png.flaticon.com/512/2111/2111370.png";
 	img.style.height = "30px";
