@@ -13,8 +13,67 @@ const MAIN_PAGE = `
 			All project parts are logical modules that can be enabled or disabled depending on player needs (which provides a good customisation for players).
 			Most modules also have configs and options, so it is possible to customize modules individually.
 		</p>
+		<div style="text-align: center; color: #ff4216; font-weight: bold;">
+			<p>Main Features:</p>
+		</div>
+		<table align="center" width="100%" style="background-color: #181818;">
+			<tr>
+				<td width="40%" style="line-height: 0;"><img style="width: 100%; margin-top: 4px; margin-bottom: 4px;" src="img/main_screenshot.png"></td>
+				<td valign="top">
+					<div style="text-align: center; color: #ff4216; font-weight: bold;">
+						<p>Custom Weather</p>
+					</div>
+					<div style="margin-left: 25px; margin-right: 25px; text-align: justify;">
+						<p>Wether in the world is not global anymore. Now in one places of the world you will see rain and snow, while in others you will see the sunny day or fluffy clouds in the sky.</p>
+						<p>Clouds are now volumetric and will have different shapes and shades depending on light and rain.</p>
+					</div>
+				</td>
+			</tr>
+		</table>
+		<table align="center" width="100%">
+			<tr>
+				<td valign="top">
+					<div style="text-align: center; color: #ff4216; font-weight: bold;">
+						<p>More Block Shapes</p>
+					</div>
+					<div style="margin-left: 25px; margin-right: 25px; text-align: justify;">
+						<p>Most blocks can be transformed into other forms and combined together. You can build complex, interesting and beautiful things with pleasure.</p>
+					</div>
+				</td>
+				<td width="40%" style="line-height: 0;"><img style="width: 100%; margin-top: 4px; margin-bottom: 4px;" src="img/mfb_screenshot.png"></td>
+			</tr>
+		</table>
+		<table align="center" width="100%" style="background-color: #181818;">
+			<tr>
+				<td width="40%" style="line-height: 0;"><img style="width: 100%; margin-top: 4px; margin-bottom: 4px;" src="img/bnb_screenshot.png"></td>
+				<td valign="top">
+					<div style="text-align: center; color: #ff4216; font-weight: bold;">
+						<p>Custom Worldgen</p>
+					</div>
+					<div style="margin-left: 25px; margin-right: 25px; text-align: justify;">
+						<p>Terrain, foliage and structures in all dimensions are custom. They are designed with different connections between them and with ecosystems in mind.</p>
+						<p>World height was also increased and in 256 blocks for the Nether.</p>
+						<p>Nether and Overworld are WIP</p>
+					</div>
+				</td>
+			</tr>
+		</table>
+		<table align="center" width="100%">
+			<tr>
+				<td valign="top">
+					<div style="text-align: center; color: #ff4216; font-weight: bold;">
+						<p>The Limit - Additional Dimension</p>
+					</div>
+					<div style="margin-left: 25px; margin-right: 25px; text-align: justify;">
+						<p>This dimension is a replacement for The End from newer Minecraft versions, but made as more natural, organic and lifeful.</p>
+						<p>It contains new materials and decorative blocks that will extend your creativity even more.</p>
+					</div>
+				</td>
+				<td width="40%" style="line-height: 0;"><img style="width: 100%; margin-top: 4px; margin-bottom: 4px;" src="img/thelimit_screenshot.png"></td>
+			</tr>
+		</table>
+		<br>
 	</div>
-	<img style="width: 100%;" src="img/main_screenshot.png">
 `;
 
 const BABRIC_DEP = "<a href='https://github.com/babric/prism-instance'>Babric Instance (MultiMC/PolyMC/Prism)</a>";
@@ -108,7 +167,7 @@ const MOD_LIST = [
 ]
 
 const DOWNLOADS_PAGE = `
-	<div style="margin-left: 25px; margin-right: 25px; text-align: justify; ">
+	<div style="margin-left: 25px; margin-right: 25px; text-align: justify;">
 		<p>Each download contains complete MultiMC/PolyMC/Prism instance, you can import it as usual and use.</p>
 			<p>Make sure that you are using <a href="https://jdk.java.net/archive/">Java 17</a>,
 			some launchers (PolyMC/Prism) have check for legacy versions that prevents usage of modern Java. Make sure that you disabled all checks.
