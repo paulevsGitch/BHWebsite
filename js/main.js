@@ -96,13 +96,6 @@ const MOD_LIST = [
 		dependencies: [BABRIC_DEP, STAPI_DEP]
 	},
 	{
-		header: "Better Nether Beta",
-		repo: "https://github.com/paulevsGitch/BetterNetherBeta/tree/stapi-2.0",
-		img: "https://github.com/paulevsGitch/BetterNetherBeta/raw/stapi-2.0/src/main/resources/assets/bnb/icon.png",
-		description: "This mod inhances vanilla Nether with new plants, mobs, blocks, biomes and terrain generator. It is a not direct port of original BetterNether mod or Minecraft 1.16 biomes into beta, but it can have similar vibes.",
-		dependencies: [BABRIC_DEP, STAPI_DEP]
-	},
-	{
 		header: "Better Weather",
 		repo: "https://github.com/paulevsGitch/BetterWeather",
 		img: "https://github.com/paulevsGitch/BetterWeather/raw/main/src/main/resources/assets/better_weather/icon.png",
@@ -117,6 +110,27 @@ const MOD_LIST = [
 		dependencies: [BABRIC_DEP, STAPI_DEP]
 	},
 	{
+		header: "Better Nether Beta",
+		repo: "https://github.com/paulevsGitch/BetterNetherBeta",
+		img: "https://github.com/paulevsGitch/BetterNetherBeta/raw/stapi-2.0/src/main/resources/assets/bnb/icon.png",
+		description: "This mod inhances vanilla Nether with new plants, mobs, blocks, biomes and terrain generator. It is a not direct port of original BetterNether mod or Minecraft 1.16 biomes into beta, but it can have similar vibes.",
+		dependencies: [BABRIC_DEP, STAPI_DEP]
+	},
+	{
+		header: "Extreme View",
+		repo: "https://github.com/paulevsGitch/ExtremeView",
+		img: "https://github.com/paulevsGitch/ExtremeView/raw/main/src/main/resources/assets/extremeview/icon.png",
+		description: "Mod that increases maximum view distance for Minecraft Beta 1.7.3. Does not increase performance on rendering large areas.",
+		dependencies: [BABRIC_DEP]
+	},
+	{
+		header: "Fishing Food Tweaks (by Telvarost)",
+		repo: "https://modrinth.com/mod/fishinfoodtweaks-stationapi",
+		img: "https://cdn.modrinth.com/data/uy45EoYN/4a3d478c08bda171fcabf739d4a1166436870e55.png",
+		description: "A StationAPI mod for Minecraft Beta 1.7.3 adds fish sizes and food tweaks.",
+		dependencies: [BABRIC_DEP, STAPI_DEP]
+	},
+	{
 		header: "Graphene <span style='color: #ff4216'>(Not Updated, WIP)</span>",
 		repo: "https://github.com/paulevsGitch/Graphene",
 		img: "https://github.com/paulevsGitch/Graphene/raw/main/src/main/resources/assets/graphene/icon.png",
@@ -124,37 +138,72 @@ const MOD_LIST = [
 		dependencies: [BABRIC_DEP, STAPI_DEP, BHCORE_DEP]
 	},
 	{
-		header: "Mod Menu (by calmilamsy, edited by VendoAU)",
-		repo: "https://github.com/VendoAU/ModMenu",
-		img: "https://github.com/VendoAU/ModMenu/raw/b1.7.3/src/main/resources/assets/modmenu/icon.png",
-		description: "This mod enriches the standard Minecraft menu with an interface displaying a one-dimensional array of modifications",
-		dependencies: [BABRIC_DEP]
+		header: "MoreFancyBlocks",
+		repo: "https://github.com/paulevsGitch/MoreFancyBlocks",
+		description: "Additional blocks and shapes for Minecraft beta",
+		dependencies: [BABRIC_DEP, STAPI_DEP]
 	},
 	{
-		header: "MojangFix (by js6pak)",
-		repo: "https://github.com/js6pak/mojangfix",
-		img: "https://cdn.modrinth.com/data/8sdj2JBj/6bbcf542d94cd819a0dcb7e93e38aa12ecbd0400.png",
-		description: "Minecraft b1.7.3 mod that fixes skins, authentication and more",
-		dependencies: [BABRIC_DEP]
+		header: "Mod Menu (by calmilamsy)",
+		repo: "https://github.com/calmilamsy/ModMenu",
+		img: "https://github.com/VendoAU/ModMenu/raw/b1.7.3/src/main/resources/assets/modmenu/icon.png",
+		description: "It enriches the standard Minecraft menu with an interface displaying a one-dimensional array of modifications",
+		dependencies: [BABRIC_DEP, STAPI_DEP]
+	},
+	{
+		header: "MojangFix StationAPI Edition (by Telvarost and 6pak)",
+		repo: "https://modrinth.com/mod/mojangfix-stationapi-edition",
+		img: "https://cdn.modrinth.com/data/cTg2WC1D/b890f75740253c7216a350330733cbc9aad5fc52.png",
+		description: "A StationAPI version of MojangFix for Minecraft b1.7.3 with configs to increase the mod's compatibility. Fixes skins, authentication, and more.",
+		dependencies: [BABRIC_DEP, STAPI_DEP]
+	},
+	{
+		header: "MostlyModernRecipes StationAPI Edition (by Telvarost)",
+		repo: "https://modrinth.com/mod/mostlymodernrecipes-stationapi",
+		img: "https://cdn.modrinth.com/data/eCtsomDX/272aa434c983262d628e1e8525273cbdc6c52bdd.png",
+		description: "A StationAPI mod for Minecraft Beta 1.7.3 that adds some modern Minecraft crafting recipes.",
+		dependencies: [BABRIC_DEP, STAPI_DEP]
+	},
+	{
+		header: "Music Discs (by Jadestrouble, edit by Telvarost)",
+		repo: "https://github.com/telvarost/b1.7.3-MusicDiscs/tree/master",
+		img: "https://raw.githubusercontent.com/telvarost/b1.7.3-MusicDiscs/master/src/main/resources/assets/musicdiscs/icon.png",
+		description: "A Babric Mod that adds the modern C418 Music Discs into Beta 1.7.3",
+		dependencies: [BABRIC_DEP, STAPI_DEP]
 	},
 	{
 		header: "SmoothBeta (by MineDiver)",
 		repo: "https://github.com/mineLdiver/smoothbeta",
-		img: "https://cdn.discordapp.com/attachments/1128626864974475374/1128626865179992155/icon.png",
+		img: "https://raw.githubusercontent.com/mineLdiver/smoothbeta/master/src/main/resources/assets/smoothbeta/icon.png",
 		description: "This mod is a collection of tweaks and optimizations that improve b1.7.3 performance",
 		dependencies: [BABRIC_DEP, STAPI_DEP]
 	},
 	{
-		header: "Quitbutton (by Byte)",
-		repo: "https://glass-repo.net/repo/mod/quitbutton",
-		description: "This mod un-hides the Quit Button from Beta 1.7.3's main menu.",
-		dependencies: [BABRIC_DEP]
+		header: "Spawn Eggs (by DanyGames2014)",
+		repo: "https://modrinth.com/mod/spawn-eggs/",
+		img: "https://cdn.modrinth.com/data/zq6BznqT/de44162004ec29ad49dfc1b1c31af65da84416ab.png",
+		description: "Adds spawn eggs for any entity to the game. Includes some extra tweaks such as spawning in mid-air, toggleable consumption and blacklist.",
+		dependencies: [BABRIC_DEP, STAPI_DEP]
+	},
+	{
+		header: "SinglePlayerCommands (by matthewperiut)",
+		repo: "https://github.com/matthewperiut/spc-babric/",
+		img: "https://raw.githubusercontent.com/matthewperiut/spc-babric/master/src/main/resources/assets/spc/icon.png",
+		description: "Adds ability to use commands in singleplayer",
+		dependencies: [BABRIC_DEP, STAPI_DEP]
 	},
 	{
 		header: "Station API (by MineDiver and Calmilamsy)",
 		repo: "https://github.com/ModificationStation/StationAPI",
-		img: "https://cdn.discordapp.com/attachments/1123686228785639535/1123686228986970152/icon.png",
+		img: "https://raw.githubusercontent.com/ModificationStation/StationAPI/master/src/main/resources/assets/stationapi/icon.png",
 		description: "A general use API for Fabric Loader mods on legacy Minecraft versions.",
+		dependencies: [BABRIC_DEP]
+	},
+	{
+		header: "Third Perrson Fix (by matthewperiut)",
+		repo: "https://github.com/matthewperiut/thirdpersonfix-fabric-b1.7.3",
+		img: "https://raw.githubusercontent.com/matthewperiut/thirdpersonfix-fabric-b1.7.3/master/src/main/resources/assets/thirdpersonfix/icon.png",
+		description: "Adds second third person camera",
 		dependencies: [BABRIC_DEP]
 	},
 	{
@@ -173,6 +222,9 @@ const DOWNLOADS_PAGE = `
 			some launchers (PolyMC/Prism) have check for legacy versions that prevents usage of modern Java. Make sure that you disabled all checks.
 		</p>
 		<ul style="line-height: 30px;">
+			<li><a href="https://github.com/paulevsGitch/BetaHorizonsPack/archive/refs/tags/alpha-0.0.7.zip">Alpha 0.0.7</a></li>
+			<li><a href="https://github.com/paulevsGitch/BetaHorizonsPack/archive/refs/tags/alpha-0.0.6.zip">Alpha 0.0.6</a></li>
+			<li><a href="https://github.com/paulevsGitch/BetaHorizonsPack/archive/refs/tags/alpha-0.0.5.zip">Alpha 0.0.5</a></li>
 			<li><a href="https://disk.yandex.ru/d/nfDFCWkQt_b_Sg">Alpha 0.0.4</a></li>
 			<li><a href="https://disk.yandex.ru/d/Wmq0MXRC0Fh2Og">Alpha 0.0.3</a></li>
 			<li><a href="https://disk.yandex.ru/d/1K5a2ibsL_lDrQ">Alpha 0.0.2</a></li>
@@ -207,7 +259,7 @@ function makeModList() {
 		html += `</div></td>`;
 		
 		html += `<td style="vertical-align: top;"><p><a href="` + mod.repo + `">` + mod.header + `</a></p>`;
-		if (mod.repo.includes("github.com")) {
+		if (mod.repo.includes("github.com") && !mod.repo.includes("tree")) {
 			html += `<p><a href="` +
 			mod.repo.replace("https://github.com/", "https://jitpack.io/#") + `"><img src="` +
 			mod.repo.replace("https://github.com/", "https://jitpack.io/v/") + `.svg"></a></p>`;
