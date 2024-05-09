@@ -81,32 +81,25 @@ const STAPI_DEP = "<a href='https://jenkins.glass-launcher.net/job/StationAPI'>S
 const BHCORE_DEP = "BHCore (deprecated)";
 
 const MOD_LIST = [
-	{
-		header: "Advanced Trees <span style='color: #ff4216'>(Not Updated, WIP)</span>",
-		repo: "https://github.com/paulevsGitch/AdvancedTrees",
-		img: "https://github.com/paulevsGitch/AdvancedTrees/raw/main/src/main/resources/assets/advancedtrees/icon.png",
-		description: "AdvancedTrees mod for Beta Horizons pack. This mod changes trees behaviour and make them dynamic complex growing structures. It also provides API for custom trees (WIP).",
-		dependencies: [BABRIC_DEP, STAPI_DEP, BHCORE_DEP]
-	},
+	//{
+	//	header: "Advanced Trees <span style='color: #ff4216'>(Not Updated, WIP)</span>",
+	//	repo: "https://github.com/paulevsGitch/AdvancedTrees",
+	//	img: "https://github.com/paulevsGitch/AdvancedTrees/raw/main/src/main/resources/assets/advancedtrees/icon.png",
+	//	description: "AdvancedTrees mod for Beta Horizons pack. This mod changes trees behaviour and make them dynamic complex growing structures. It also provides API for custom trees (WIP).",
+	//	dependencies: [BABRIC_DEP, STAPI_DEP, BHCORE_DEP]
+	//},
 	{
 		header: "AnnoyanceFix (by Telvarost and 2zqa)",
-		repo: "https://github.com/telvarost/AnnoyanceFix-StationAPI",
+		repo: "https://modrinth.com/mod/annoyancefix-stationapi-edition",
 		img: "https://user-images.githubusercontent.com/25235249/260255281-f6331228-f1df-4e48-b33d-e94b46dcc703.png",
 		description: "The aim of this mod is to fix (major) annoyances or backport useful features that do not affect gameplay.",
 		dependencies: [BABRIC_DEP, STAPI_DEP]
 	},
 	{
 		header: "Better Weather",
-		repo: "https://github.com/paulevsGitch/BetterWeather",
+		repo: "https://modrinth.com/mod/betterweather",
 		img: "https://github.com/paulevsGitch/BetterWeather/raw/main/src/main/resources/assets/better_weather/icon.png",
 		description: "This mod improves Minecraft weather by making clouds volumetric and weather effects local.",
-		dependencies: [BABRIC_DEP, STAPI_DEP]
-	},
-	{
-		header: "BH Creative",
-		repo: "https://github.com/paulevsGitch/BHCreative",
-		img: "https://github.com/paulevsGitch/BHCreative/raw/stapi-2.0/src/main/resources/assets/bhcreative/icon.png",
-		description: "Creative mod for Beta Horizons modpack.",
 		dependencies: [BABRIC_DEP, STAPI_DEP]
 	},
 	{
@@ -117,11 +110,32 @@ const MOD_LIST = [
 		dependencies: [BABRIC_DEP, STAPI_DEP]
 	},
 	{
+		header: "Better Screenshots (by Telvarost)",
+		repo: "https://modrinth.com/mod/betterscreenshots-stationapi/",
+		img: "https://cdn.modrinth.com/data/IGVaFvS9/28f5f35fe292c31f05af11587618665172484f1d.png",
+		description: "This mod improves Minecraft weather by making clouds volumetric and weather effects local.",
+		dependencies: [BABRIC_DEP]
+	},
+	{
+		header: "BH Creative",
+		repo: "https://github.com/paulevsGitch/BHCreative",
+		img: "https://github.com/paulevsGitch/BHCreative/raw/stapi-2.0/src/main/resources/assets/bhcreative/icon.png",
+		description: "Creative mod for Beta Horizons modpack.",
+		dependencies: [BABRIC_DEP, STAPI_DEP]
+	},
+	{
 		header: "Extreme View",
-		repo: "https://github.com/paulevsGitch/ExtremeView",
+		repo: "https://modrinth.com/mod/extremeview",
 		img: "https://github.com/paulevsGitch/ExtremeView/raw/main/src/main/resources/assets/extremeview/icon.png",
 		description: "Mod that increases maximum view distance for Minecraft Beta 1.7.3. Does not increase performance on rendering large areas.",
 		dependencies: [BABRIC_DEP]
+	},
+	{
+		header: "Fast Station API Intro (by Telvarost)",
+		repo: "https://github.com/telvarost/stapi-fast-intro",
+		img: "https://raw.githubusercontent.com/telvarost/stapi-fast-intro/master/src/main/resources/assets/stapi-fast-intro/icon.png",
+		description: "Replaces default StAPI intro with fast progress bar.",
+		dependencies: [BABRIC_DEP, STAPI_DEP]
 	},
 	{
 		header: "Fishing Food Tweaks (by Telvarost)",
@@ -130,13 +144,13 @@ const MOD_LIST = [
 		description: "A StationAPI mod for Minecraft Beta 1.7.3 adds fish sizes and food tweaks.",
 		dependencies: [BABRIC_DEP, STAPI_DEP]
 	},
-	{
-		header: "Graphene <span style='color: #ff4216'>(Not Updated, WIP)</span>",
-		repo: "https://github.com/paulevsGitch/Graphene",
-		img: "https://github.com/paulevsGitch/Graphene/raw/main/src/main/resources/assets/graphene/icon.png",
-		description: "This mod enhances Minecraft graphics in its own way.",
-		dependencies: [BABRIC_DEP, STAPI_DEP, BHCORE_DEP]
-	},
+	//{
+	//	header: "Graphene <span style='color: #ff4216'>(Not Updated, WIP)</span>",
+	//	repo: "https://github.com/paulevsGitch/Graphene",
+	//	img: "https://github.com/paulevsGitch/Graphene/raw/main/src/main/resources/assets/graphene/icon.png",
+	//	description: "This mod enhances Minecraft graphics in its own way.",
+	//	dependencies: [BABRIC_DEP, STAPI_DEP, BHCORE_DEP]
+	//},
 	{
 		header: "MoreFancyBlocks",
 		repo: "https://github.com/paulevsGitch/MoreFancyBlocks",
