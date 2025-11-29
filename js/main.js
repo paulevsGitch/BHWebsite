@@ -58,7 +58,7 @@ const MAIN_PAGE = `
 				</td>
 			</tr>
 		</table>
-		<table align="center" width="100%">
+		<!--<table align="center" width="100%">
 			<tr>
 				<td valign="top">
 					<div style="text-align: center; color: #ff4216; font-weight: bold;">
@@ -71,7 +71,7 @@ const MAIN_PAGE = `
 				</td>
 				<td width="40%" style="line-height: 0;"><img style="width: 100%; margin-top: 4px; margin-bottom: 4px;" src="img/thelimit_screenshot.png"></td>
 			</tr>
-		</table>
+		</table>-->
 		<br>
 	</div>
 `;
@@ -81,13 +81,6 @@ const STAPI_DEP = "<a href='https://jenkins.glass-launcher.net/job/StationAPI'>S
 const BHCORE_DEP = "BHCore (deprecated)";
 
 const MOD_LIST = [
-	//{
-	//	header: "Advanced Trees <span style='color: #ff4216'>(Not Updated, WIP)</span>",
-	//	repo: "https://github.com/paulevsGitch/AdvancedTrees",
-	//	img: "https://github.com/paulevsGitch/AdvancedTrees/raw/main/src/main/resources/assets/advancedtrees/icon.png",
-	//	description: "AdvancedTrees mod for Beta Horizons pack. This mod changes trees behaviour and make them dynamic complex growing structures. It also provides API for custom trees (WIP).",
-	//	dependencies: [BABRIC_DEP, STAPI_DEP, BHCORE_DEP]
-	//},
 	{
 		header: "AnnoyanceFix (by Telvarost and 2zqa)",
 		repo: "https://modrinth.com/mod/annoyancefix-stationapi-edition",
@@ -96,10 +89,10 @@ const MOD_LIST = [
 		dependencies: [BABRIC_DEP, STAPI_DEP]
 	},
 	{
-		header: "Better Weather",
-		repo: "https://modrinth.com/mod/betterweather",
-		img: "https://github.com/paulevsGitch/BetterWeather/raw/main/src/main/resources/assets/better_weather/icon.png",
-		description: "This mod improves Minecraft weather by making clouds volumetric and weather effects local.",
+		header: "Better F3",
+		repo: "https://modrinth.com/mod/betterf3-stationapi",
+		img: "https://cdn.modrinth.com/data/NhFO9av6/ec22363a112fc51e99f47559b4762e4f573a0569_96.webp",
+		description: "BetterF3 StationAPI is a port of BetterF3 to b1.7.3 StationAPI based on the 1.16.2 version of the mod. It replaces Minecraft's original debug HUD with a highly customizable, more human-readable HUD.",
 		dependencies: [BABRIC_DEP, STAPI_DEP]
 	},
 	{
@@ -107,6 +100,13 @@ const MOD_LIST = [
 		repo: "https://github.com/paulevsGitch/BetterNetherBeta",
 		img: "https://github.com/paulevsGitch/BetterNetherBeta/raw/stapi-2.0/src/main/resources/assets/bnb/icon.png",
 		description: "This mod inhances vanilla Nether with new plants, mobs, blocks, biomes and terrain generator. It is a not direct port of original BetterNether mod or Minecraft 1.16 biomes into beta, but it can have similar vibes.",
+		dependencies: [BABRIC_DEP, STAPI_DEP]
+	},
+	{
+		header: "Better Weather",
+		repo: "https://modrinth.com/mod/betterweather",
+		img: "https://github.com/paulevsGitch/BetterWeather/raw/main/src/main/resources/assets/better_weather/icon.png",
+		description: "This mod improves Minecraft weather by making clouds volumetric and weather effects local.",
 		dependencies: [BABRIC_DEP, STAPI_DEP]
 	},
 	{
@@ -121,6 +121,13 @@ const MOD_LIST = [
 		repo: "https://github.com/paulevsGitch/BHCreative",
 		img: "https://github.com/paulevsGitch/BHCreative/raw/stapi-2.0/src/main/resources/assets/bhcreative/icon.png",
 		description: "Creative mod for Beta Horizons modpack.",
+		dependencies: [BABRIC_DEP, STAPI_DEP]
+	},
+	{
+		header: "Colored Planks",
+		repo: "https://modrinth.com/mod/coloredplanks",
+		img: "https://github.com/paulevsGitch/ColoredPlanks/raw/0.1.2/src/main/resources/assets/coloredplanks/icon.png",
+		description: "Simple mod that adds colored planks and blocks from them for Minecraft beta 1.7.3 (for StAPI).",
 		dependencies: [BABRIC_DEP, STAPI_DEP]
 	},
 	{
@@ -144,23 +151,10 @@ const MOD_LIST = [
 		description: "A StationAPI mod for Minecraft Beta 1.7.3 adds fish sizes and food tweaks.",
 		dependencies: [BABRIC_DEP, STAPI_DEP]
 	},
-	//{
-	//	header: "Graphene <span style='color: #ff4216'>(Not Updated, WIP)</span>",
-	//	repo: "https://github.com/paulevsGitch/Graphene",
-	//	img: "https://github.com/paulevsGitch/Graphene/raw/main/src/main/resources/assets/graphene/icon.png",
-	//	description: "This mod enhances Minecraft graphics in its own way.",
-	//	dependencies: [BABRIC_DEP, STAPI_DEP, BHCORE_DEP]
-	//},
 	{
-		header: "MoreFancyBlocks",
-		repo: "https://github.com/paulevsGitch/MoreFancyBlocks",
-		description: "Additional blocks and shapes for Minecraft beta",
-		dependencies: [BABRIC_DEP, STAPI_DEP]
-	},
-	{
-		header: "Mod Menu (by calmilamsy)",
-		repo: "https://github.com/calmilamsy/ModMenu",
-		img: "https://github.com/VendoAU/ModMenu/raw/b1.7.3/src/main/resources/assets/modmenu/icon.png",
+		header: "Mod Menu Babric (by DanyGames2014)",
+		repo: "https://modrinth.com/mod/modmenu-babric",
+		img: "https://cdn.modrinth.com/data/vf3X9pHM/2095f5b60e9b4df033c0c8baa7ac87ba280ea99c.png",
 		description: "It enriches the standard Minecraft menu with an interface displaying a one-dimensional array of modifications",
 		dependencies: [BABRIC_DEP, STAPI_DEP]
 	},
@@ -176,6 +170,20 @@ const MOD_LIST = [
 		repo: "https://modrinth.com/mod/mostlymodernrecipes-stationapi",
 		img: "https://cdn.modrinth.com/data/eCtsomDX/272aa434c983262d628e1e8525273cbdc6c52bdd.png",
 		description: "A StationAPI mod for Minecraft Beta 1.7.3 that adds some modern Minecraft crafting recipes.",
+		dependencies: [BABRIC_DEP, STAPI_DEP]
+	},
+	{
+		header: "RetroAuth (by Slainlight)",
+		repo: "https://modrinth.com/mod/retroauth",
+		img: "https://cdn.modrinth.com/data/KbwhnMO5/b79f23f34bd7fef096c5c676aa08d5c9d70b9eec.png",
+		description: "Adds authentication and skin fixes for b1.7.3. Allows you to join servers with proper authentication and have modern minecraft skins.",
+		dependencies: [BABRIC_DEP, STAPI_DEP]
+	},
+	{
+		header: "RetroCommands (by Slainlight)",
+		repo: "https://modrinth.com/mod/retrocommands",
+		img: "https://cdn.modrinth.com/data/wIWtkL0s/f0cccd06066d35946fe33e9b9defbdd4404364d4.png",
+		description: "Enhanced commands that works on both server and singleplayer sides.",
 		dependencies: [BABRIC_DEP, STAPI_DEP]
 	},
 	{
@@ -197,13 +205,6 @@ const MOD_LIST = [
 		repo: "https://modrinth.com/mod/spawn-eggs/",
 		img: "https://cdn.modrinth.com/data/zq6BznqT/de44162004ec29ad49dfc1b1c31af65da84416ab.png",
 		description: "Adds spawn eggs for any entity to the game. Includes some extra tweaks such as spawning in mid-air, toggleable consumption and blacklist.",
-		dependencies: [BABRIC_DEP, STAPI_DEP]
-	},
-	{
-		header: "SinglePlayerCommands (by matthewperiut)",
-		repo: "https://github.com/matthewperiut/spc-babric/",
-		img: "https://raw.githubusercontent.com/matthewperiut/spc-babric/master/src/main/resources/assets/spc/icon.png",
-		description: "Adds ability to use commands in singleplayer",
 		dependencies: [BABRIC_DEP, STAPI_DEP]
 	},
 	{
@@ -236,6 +237,10 @@ const DOWNLOADS_PAGE = `
 			some launchers (PolyMC/Prism) have check for legacy versions that prevents usage of modern Java. Make sure that you disabled all checks.
 		</p>
 		<ul style="line-height: 30px;">
+			<li><a href="https://github.com/paulevsGitch/BetaHorizonsPack/archive/refs/tags/alpha-0.0.11.zip">Alpha 0.0.11</a></li>
+			<li><a href="https://github.com/paulevsGitch/BetaHorizonsPack/archive/refs/tags/alpha-0.0.10.zip">Alpha 0.0.10</a></li>
+			<li><a href="https://github.com/paulevsGitch/BetaHorizonsPack/archive/refs/tags/alpha-0.0.9.zip">Alpha 0.0.9</a></li>
+			<li><a href="https://github.com/paulevsGitch/BetaHorizonsPack/archive/refs/tags/alpha-0.0.8.zip">Alpha 0.0.8</a></li>
 			<li><a href="https://github.com/paulevsGitch/BetaHorizonsPack/archive/refs/tags/alpha-0.0.7.zip">Alpha 0.0.7</a></li>
 			<li><a href="https://github.com/paulevsGitch/BetaHorizonsPack/archive/refs/tags/alpha-0.0.6.zip">Alpha 0.0.6</a></li>
 			<li><a href="https://github.com/paulevsGitch/BetaHorizonsPack/archive/refs/tags/alpha-0.0.5.zip">Alpha 0.0.5</a></li>
